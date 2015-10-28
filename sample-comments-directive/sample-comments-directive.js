@@ -2,7 +2,7 @@
 
     'use strict';
 
-    angular.module('yp.components.activityComments', [])
+    angular.module('sample.components.activityComments', [])
         .directive('activityComments', ['$rootScope', '$state', '$stateParams', 'accessLevels', 'UserService', 'SocialInteractionService', 'ActivityService',
             function ($rootScope, $state, $stateParams, accessLevels, UserService, SocialInteractionService, ActivityService) {
                 return {
