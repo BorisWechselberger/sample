@@ -1,0 +1,222 @@
+@import "sample-variables";
+
+@sample-layout-gutter: 0.6em;
+
+body {
+  background: @sample-secondary;
+}
+
+footer {
+  margin-bottom: 3em;
+}
+
+.container.dcm, .container.dhc, .container.admin {
+  margin-top: 15px;
+  background-color: @sample-secondary;
+}
+
+@media (max-width: @screen-sm) {
+  div[scroll-along] {
+    top: 0 !important;
+  }
+}
+
+
+// button bar for dhc mobile
+
+@media (max-width: @screen-sm) {
+  .dhc section:last-of-type {
+
+    .header-row, .button-row {
+      position: fixed;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding: 5px;
+      z-index: 101;
+
+      border-top: 1px solid @sample-divider;
+    }
+
+    .header-row {
+      bottom: 0;
+      margin: 0;
+      height: auto;
+    }
+    .button-row {
+      bottom: 30px;
+    }
+
+  }
+}
+
+.column-layout {
+
+  nav,
+  aside,
+  section {
+//    background-color: white;
+    padding: 0.2em;
+  }
+
+  @media(min-width: 0) {
+    display: flex;
+
+    nav,
+    aside,
+    section {
+      margin-top: @sample-layout-gutter;
+    }
+
+    nav {
+      margin-right: @sample-layout-gutter;
+    }
+    aside {
+      margin-left: @sample-layout-gutter;
+    }
+
+    nav {
+      flex: 0 0 14em;
+    }
+    aside {
+      flex: 0 0 18em;
+    }
+    section {
+      flex: 1 1  auto;
+    }
+  }
+
+}
+
+
+.two-column-layout {
+
+  display: flex;
+
+  margin-bottom: 1em;
+
+  section {
+    flex: 0 0 75%;
+    padding: 0 12px 12px 12px;
+  }
+
+  section:first-of-type {
+    flex: 0 0 25%;
+  }
+
+}
+
+
+
+.three-column-layout {
+
+  @media(min-width: @screen-sm) {
+    display: flex;
+
+    margin-bottom: 1em;
+
+    section:not(:first-of-type) {
+      border-left: 1px solid @sample-divider;
+    }
+
+
+    section {
+      flex: 0 1 50%; // IE10 fix: flex-shrink is required
+      padding: 0 12px 12px 12px;
+
+      > div.box {
+        border-bottom: 1px solid @sample-divider;
+      }
+      > div {
+        padding-bottom: 1em;
+        //          transition: 0.4s ease-in opacity;
+      }
+    }
+
+    section:first-of-type, section:last-of-type {
+      flex: 0 0 25%;
+    }
+
+    section.inactive {
+      > div {
+        opacity: 0;
+      }
+    }
+
+
+  }
+
+}
+
+.four-column-layout {
+
+  @media(min-width: @screen-sm) {
+    display: flex;
+
+    margin-bottom: 1em;
+
+
+    section:not(:first-of-type) {
+      border-left: 1px solid @sample-divider;
+    }
+
+    section {
+      flex: 0 0 25%;
+      padding: 0 12px 12px 12px;
+
+      > div.box {
+        border-bottom: 1px solid @sample-divider;
+      }
+      > div {
+        padding-bottom: 1em;
+        //          transition: 0.4s ease-in opacity;
+      }
+    }
+
+    section.inactive {
+      > div {
+        opacity: 0;
+      }
+    }
+
+
+  }
+
+}
+
+.column-layout, .three-column-layout, .four-column-layout {
+
+
+  .header-row {
+    height: 2em;
+    margin-bottom: 1em;
+
+    @media(min-width: @screen-sm) {
+      > * {
+        margin: 0;
+      }
+    }
+  }
+  .button-row {
+    height: 4em;
+  }
+
+  > section:last-of-type, aside {
+
+    .button-row {
+
+      .btn {
+        margin-bottom: 0.5em;
+        width: 49%;
+      }
+
+      .btn:first-of-type {
+        float: left;
+      }
+      .btn:last-of-type {
+        float: right;
+      }
+    }
+  }
+
+}

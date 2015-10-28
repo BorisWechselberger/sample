@@ -1,0 +1,120 @@
+.game-card {
+  box-shadow: 0px 3px 6px @sample-shadow;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+
+.component,
+.topicStress,
+.topicNutrition,
+.topicFitness,
+.topicErgonomics,
+.topicSafety,
+.eventFuture,
+.eventPresent,
+.eventPast,
+.eventConflict,
+.eventCoach,
+.offerCampaignLead,
+.offerCoach,
+.offerExpert,
+.offerUser,
+.offerYoupers,
+.organization,
+.idea {
+
+  .sheet {
+    .caption();
+  }
+
+  .sheet.primary {
+    background: @sample-primary;
+    color: white;
+    font-size: 16px;
+  }
+
+
+}
+
+
+// Event Cards
+
+activity-event-stack[type=current], activity-event-card[type=feedback] {
+
+  .eventFuture {
+    .date {
+      color: @sample-event-future;
+    }
+  }
+  .eventPresent {
+    .date {
+      color: @sample-event-present;
+    }
+  }
+  .eventPast {
+    .date {
+      color: @sample-event-past;
+    }
+  }
+}
+
+game-area.current-activities .flex .eventCoach {
+  .sheet.primary {
+    background-color: @sample-accent;
+  }
+  .sheet:not(.primary) {
+    background-color: white;
+    color: @sample-accent;
+  }
+}
+
+
+// Offer Cards
+
+
+.offerCampaignLead {
+  .sheet.tertiary {
+    background-color: @sample-campaignLead;
+    color: @sample-primary;
+  }
+}
+.offerCoach {
+  .sheet.tertiary {
+    background-color: @sample-coach;
+    color: @sample-primary;
+  }
+}
+.offerExpert {
+  .sheet.tertiary {
+    background-color: @sample-productAdmin;
+    color: white;
+  }
+  .author {
+    color: white;
+  }
+  .authorType {
+    color: white;
+    font-weight: 200;
+  }
+}
+.offerUser {
+  .sheet.tertiary {
+    background-color: @sample-user;
+    color: @sample-primary;
+  }
+}
+.offerProductAdmin {
+  .sheet.tertiary {
+    background-color: @sample-productAdmin;
+    color: white;
+  }
+  .author {
+    color: white;
+  }
+
+  .authorType {
+    color: white;
+    font-weight: 200;
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "clientmsg": {
+    "success": {
+      "comment": {
+        "save": "Comment saved"
+      },
+      "pictureSaved": "Image saved successfully"
+    },
+    "error": {
+      "avatar": {
+        "invalid": {
+          "fileFormat": "Invalid image format",
+          "fileSize": "Please choose a smaller file size (<2MB)"
+        },
+        "error": "An error occurred"
+      },
+      "502": "Our servers are not available at the moment, we are taking care of this. Please try again in a few minutes.",
+      "503": "We are currently improving the campaign service. Therefore, the application is not available at the moment. Please try again in a few minutes. Thank you for understanding.",
+      "504": "Our servers are not available at the moment, we are taking care of this. Please try again in a few minutes.",
+      "alreadyJoinedUsers": "The campaign can not be deleted because participants have already registered.",
+      "cannotSwitchCampaign": "You can not accept this campaign invitation because you are already participating in another campaign. It is not possible to take part in several campaigns simultaneously.",
+      "memberOfOtherCampaign": "The page you are requesting belongs to the campaign of another team. You yourself are already participating in different campaign. Cross-Campaign actions are not possible.",
+      "DhcButNoCampaign": "We are sorry! Something went wrong, please register again by clicking on the link in the email from the Campaign Leader. (Error: This user doesn't have an active campaign)",
+      "invalidUserForEmailVerificationToken": "The clicked link does not belong to this account. Please log in with the correct email address."
+    }
+  },
+  "busy": {
+    "submitting": "Saving..."
+  },
+  "calendar": {
+    "tomorrow": "tomorrow",
+    "today": "today",
+    "yesterday": "yesterday"
+  },
+  "executiontype": {
+    "self": "self",
+    "group": "group"
+  },
+  "gender": {
+    "undefined": "unknown",
+    "male": "male",
+    "female": "female"
+  },
+  "maritalStatus": {
+    "maritalStatus": "Marital Status",
+    "undefined": "unknown",
+    "single": "single",
+    "unmarried": "unmarried",
+    "married": "married",
+    "separated": "separated",
+    "divorced": "divorced",
+    "widowed": "widowed"
+  },
+  "weekday": {
+    "MO": "Monday",
+    "TU": "Tuesday",
+    "WE": "Wednesday",
+    "TH": "Thursday",
+    "FR": "Friday",
+    "SA": "Saturday",
+    "SU": "Sunday"
+  },
+  "timezone": {
+    "00:00": "UTC",
+    "+01:00": "Zurich (+01:00)",
+    "+03:00": "Sotchi (+03:00)"
+  },
+  "language": {
+    "de": "Deutsch",
+    "en": "English",
+    "fr": "Français",
+    "it": "Italiano"
+  },
+  "feedbackCategory": {
+    "bug": "Error",
+    "improvement": "Improvement",
+    "other": "Miscellaneous",
+    "question": "Question",
+    "support": "Help"
+  },
+  "composeCommentForm": {
+    "comment": {
+      "paceholder": "Write a comment"
+    },
+    "submit": "Send"
+  },
+  "feedbackForm": {
+    "header": "Thank you for your feedback! ",
+    "header2": "We are constantly working to improve our service.",
+    "anonymous": {
+      "label": "Anonymous feedback"
+    },
+    "close": "Close",
+    "contactInfo": {
+      "error": {
+        "email": "Please enter a valid email address or select anonymous feedback"
+      },
+      "label": "Email",
+      "placeholder": "Email"
+    },
+    "description": {
+      "label": "Description"
+    },
+    "feedbackCategory": {
+      "label": "Category"
+    },
+    "submit": "Send",
+    "submitted": "Thank you for your feedback!",
+    "username": {
+      "label": "Username"
+    }
+  },
+  "endorsementType": {
+    "presented": "presented by:",
+    "sponsored": "sponsored by:"
+  }
+}
