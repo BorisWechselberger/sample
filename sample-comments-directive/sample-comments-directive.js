@@ -10,7 +10,7 @@
                     scope: {
                         activity: '='
                     },
-                    templateUrl: 'components/directives/activity-comments-directive/activity-comments-directive.html',
+                    templateUrl: 'components/directives/sample-comments-directive/sample-comments-directive.html',
 
                     link: function (scope, elem, attrs) {
 
